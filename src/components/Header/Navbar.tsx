@@ -10,7 +10,32 @@ const Navbar = () => {
             Valentin Berceaux
           </span>
         </a>
-        <nav></nav>
+        <nav className="flex flex-wrap items-center justify-center -mr-2 text-xs sm:text-sm sm:space-x-4 md:text-base">
+          <a
+            href=""
+            className="px-2 py-1 rounded-md hover:bg-gray-200 focus:bg-gray-300 focus:outline-none"
+          >
+            Home
+          </a>
+          <a
+            href=""
+            className="px-2 py-1 rounded-md hover:bg-gray-200 focus:bg-gray-300 focus:outline-none"
+          >
+            Projects
+          </a>
+          <a
+            href=""
+            className="px-2 py-1 rounded-md hover:bg-gray-200 focus:bg-gray-300 focus:outline-none"
+          >
+            Skills
+          </a>
+          <a
+            href=""
+            className="px-2 py-1 rounded-md hover:bg-gray-200 focus:bg-gray-300 focus:outline-none"
+          >
+            Contact
+          </a>
+        </nav>
       </div>
     </header>
   );
