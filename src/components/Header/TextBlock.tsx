@@ -1,7 +1,7 @@
 const TextBlock = () => {
   return (
     <div className="mt-8 lg:mt-0 lg:w-1/2">
-      <h1 className="relative flex flex-wrap justify-center w-full mb-2 text-4xl font-bold leading-tight sm:mb-0 sm:justify-start sm:text-6xl sm:leading-snug">
+      <h1 className="relative flex flex-wrap justify-center w-full mb-2 text-4xl font-bold leading-tight sm:mb-0 sm:justify-start sm:text-5xl sm:leading-snug">
         <span className="w-full text-center sm:text-left ">Bonjour, I'm</span>
         <span className="text-transparent bg-clip-text bg-gradient-to-r leading-tight from-cyan-500 to-blue-500">
           Valentin Berceaux

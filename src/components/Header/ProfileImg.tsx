@@ -10,8 +10,8 @@ const profileImg = () => {
             <Image
               src={profilePic}
               alt="Picture of the author"
-              width={400}
-              height={300}
+              width={300}
+              height={260}
               objectFit="cover"
               className="rounded-md shadow"
             />

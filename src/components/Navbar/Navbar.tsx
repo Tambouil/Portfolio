@@ -1,4 +1,12 @@
-const Navbar = () => {
+export interface INav {
+  logo: string;
+  home: string;
+  projects: string;
+  skills: string;
+  contact: string;
+}
+
+const Navbar = (props: INav) => {
   return (
     <header className="sticky top-0 z-30 px-4 mb-6 bg-gray-100 sm:px-8">
       <div className="flex flex-col items-center justify-between max-w-screen-xl py-3 mx-auto md:flex-row">
@@ -7,7 +15,7 @@ const Navbar = () => {
           className="px-2 py-1 -mx-2 font-medium leading-tight rounded-md focus:bg-white focus:outline-none"
         >
           <span className="text-transparent font-bold bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
-            Valentin Berceaux
+            {props.logo}
           </span>
           .
         </a>
@@ -16,25 +24,25 @@ const Navbar = () => {
             href="#home"
             className="px-2 py-1 rounded-md hover:bg-gray-200 focus:bg-gray-300 focus:outline-none"
           >
-            Home
+            {props.home}
           </a>
           <a
             href="#projects"
             className="px-2 py-1 rounded-md hover:bg-gray-200 focus:bg-gray-300 focus:outline-none"
           >
-            Projects
+            {props.projects}
           </a>
           <a
             href="#skills"
             className="px-2 py-1 rounded-md hover:bg-gray-200 focus:bg-gray-300 focus:outline-none"
           >
-            Skills
+            {props.skills}
           </a>
           <a
             href="#contact"
             className="px-2 py-1 rounded-md hover:bg-gray-200 focus:bg-gray-300 focus:outline-none"
           >
-            Contact
+            {props.contact}
           </a>
         </nav>
       </div>
