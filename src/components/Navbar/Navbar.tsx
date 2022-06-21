@@ -1,3 +1,8 @@
+// import useThemeSwitcher from "@/hooks/useThemeSwitcher";
+import { FiSun, FiMoon } from "react-icons/fi";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+
 export interface INav {
   logo: string;
   home: string;
@@ -7,9 +12,17 @@ export interface INav {
 }
 
 const Navbar = (props: INav) => {
+  // const [activeTheme, setTheme] = useThemeSwitcher();
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  // When mounted on client, now we can show the UI
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
   return (
-    <header className="sticky top-0 z-30 px-4 mb-6 bg-gray-100 sm:px-8">
-      <div className="flex flex-col items-center justify-between max-w-screen-xl py-3 mx-auto md:flex-row">
+    <header className="w-full sticky top-0 z-30 px-4 bg-gray-100 sm:px-8">
+      <div className="container flex flex-col items-center justify-between py-3 mx-auto md:flex-row">
         <a
           href="/"
           className="px-2 py-1 -mx-2 font-medium leading-tight rounded-md focus:bg-white focus:outline-none"
@@ -44,6 +57,20 @@ const Navbar = (props: INav) => {
           >
             {props.contact}
           </a>
+          <div
+            // onClick={() => setTheme(activeTheme)}
+            onClick={() => {
+              setTheme(theme === "light" ? "dark" : "light");
+            }}
+            aria-label="Theme Switcher"
+            className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+          >
+            {theme === "dark" ? (
+              <FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
+            ) : (
+              <FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
+            )}
+          </div>
         </nav>
       </div>
     </header>

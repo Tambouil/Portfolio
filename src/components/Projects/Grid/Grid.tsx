@@ -3,7 +3,7 @@ import Card from "./Card/Card";
 const Grid = () => {
   return (
     <div className="px-4 sm:px-8">
-      <div className="max-w-screen-xl mx-auto">
+      <div className="mx-auto">
         <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
           <Card
             title={"hello"}

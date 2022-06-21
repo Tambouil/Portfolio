@@ -3,6 +3,8 @@ import { Meta } from "@/layouts/Meta";
 import Navbar from "../components/Navbar/Navbar";
 import Header from "@/components/Header/Header";
 import { Projects } from "@/components/Projects/Projects";
+import Skills from "@/components/Skills/Skills";
+import Contact from "@/components/Contact/Contact";
 
 const Home: NextPage = () => {
   return (
@@ -18,9 +20,11 @@ const Home: NextPage = () => {
         skills={"Skills"}
         contact={"Contact"}
       />
-      <main className="space-y-6 ">
+      <main className="container mx-auto space-y-6 ">
         <Header />
-        <Projects />
+        {/* <Projects />
+        <Skills />
+        <Contact /> */}
       </main>
     </>
   );

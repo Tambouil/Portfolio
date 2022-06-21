@@ -55,7 +55,7 @@ const Card = (props: IPost) => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span className="ml-3">Source Code</span>
+              <span className="ml-1 lg:ml-3">Source Code</span>
             </a>
           </div>
           <div className="flex flex-1 w-0 -ml-px">
