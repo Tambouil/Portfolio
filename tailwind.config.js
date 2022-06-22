@@ -24,14 +24,21 @@ module.exports = {
     extend: {
       colors: {
         // Light colors
-        "primary-light": "#F7F8FC",
-        "secondary-light": "#FFFFFF",
-        "ternary-light": "#f6f7f8",
+        "primary-light": "#FFFEFF",
+        "secondary-light": "#272343",
+        "ternary-light": "#e05e5e",
 
         // Dark colors
-        "primary-dark": "#0D2438",
-        "secondary-dark": "#102D44",
-        "ternary-dark": "#1E3851",
+        "nav-navy": "#09192f",
+        navy: "#0a192f",
+        "light-navy": "#112240",
+        "lightest-navy": "#233554",
+        "lightest-navy-disabled": "#384965",
+        slate: "#8892b0",
+        "light-slate": "#a8b2d1",
+        "lightest-slate": "#ccd6f6",
+        white: "#e6f1ff",
+        green: "#102D44",
 
         // Extended v3 color
         gray: colors.neutral,

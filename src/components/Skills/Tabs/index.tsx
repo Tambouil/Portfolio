@@ -45,17 +45,17 @@ const Tabs = () => {
     <div className="grid place-items-center">
       <div className="w-full max-w-md px-2  sm:px-0">
         <Tab.Group>
-          <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+          <Tab.List className="flex space-x-1 rounded-xl bg-lightest-navy p-1">
             {Object.keys(categories).map((category) => (
               <Tab
                 key={category}
                 className={({ selected }) =>
                   classNames(
-                    "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700",
+                    "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
                     "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
                     selected
-                      ? "bg-white shadow"
-                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                      ? "bg-white text-ternary-light dark:bg-lightest-slate shadow"
+                      : "text-slate hover:bg-white/[0.12] hover:text-white"
                   )
                 }
               >
@@ -66,9 +66,9 @@ const Tabs = () => {
                     viewBox="0 0 52 52"
                   >
                     <polygon
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                       points="29 13 14 29 25 29 23 39 38 23 27 23"
                     ></polygon>
