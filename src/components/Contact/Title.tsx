@@ -8,7 +8,7 @@ const Title = () => {
           Contact
         </h2>
         <span className="text-base text-lightest-navy dark:text-slate">
-          I&apos;rem currently available for your next project. Feel free to
+          I&apos;m currently available for your next project. Feel free to
           contact me to talk about it !
         </span>
         <GetIntouch />
