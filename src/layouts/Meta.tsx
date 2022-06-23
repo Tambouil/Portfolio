@@ -28,9 +28,43 @@ const Meta = (props: IMetaProps) => {
           key="favicon"
         />
         <meta
+          property="og:url"
+          content="https://valentin-berceaux.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Valentin Berceaux | Full Stack Developer"
+        />
+        <meta
+          property="og:description"
+          content="Bonjour 👋, I'm Valentin Berceaux, a fullstack web developer with Back-End affinity from West of France."
+        />
+        <meta
           property="og:image"
           content="https://portfolio-tambouil.vercel.app/assets/img/developer-dark.svg"
-          key="ogimage"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:domain"
+          content="valentin-berceaux.vercel.app"
+        />
+        <meta
+          property="twitter:url"
+          content="https://valentin-berceaux.vercel.app/"
+        />
+        <meta
+          name="twitter:title"
+          content="Valentin Berceaux | Full Stack Developer"
+        />
+        <meta
+          name="twitter:description"
+          content="Bonjour 👋, I'm Valentin Berceaux, a fullstack web developer with Back-End affinity from West of France."
+        />
+        <meta
+          name="twitter:image"
+          content="https://portfolio-tambouil.vercel.app/assets/img/developer-dark.svg"
         />
       </Head>
       <NextSeo
