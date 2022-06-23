@@ -44,7 +44,6 @@ const Meta = (props: IMetaProps) => {
           property="og:image"
           content="https://portfolio-tambouil.vercel.app/assets/img/developer-dark.svg"
         />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:domain"
@@ -66,6 +65,7 @@ const Meta = (props: IMetaProps) => {
           name="twitter:image"
           content="https://portfolio-tambouil.vercel.app/assets/img/developer-dark.svg"
         />
+        <meta property="og:image:width" content="600" />
       </Head>
       <NextSeo
         title={props.title}
