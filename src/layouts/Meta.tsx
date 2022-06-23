@@ -27,6 +27,11 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
+        <meta
+          property="og:image"
+          content="https://portfolio-tambouil.vercel.app/assets/img/developer-dark.svg"
+          key="ogimage"
+        />
       </Head>
       <NextSeo
         title={props.title}
