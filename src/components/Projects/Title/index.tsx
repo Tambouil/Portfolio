@@ -8,9 +8,9 @@ const Title = () => {
         <span className="text-base text-lightest-navy dark:text-slate">
           These are some of {""}
           <strong className="font-semibold">
-            my favourite coding projects
+            my favourites coding projects
           </strong>
-          {""} I made during my coding bootcamp aswell as side projects.
+          {""} I made during my coding bootcamp as well as side projects.
         </span>
       </div>
     </div>

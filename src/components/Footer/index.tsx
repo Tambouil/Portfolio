@@ -3,27 +3,33 @@ import Image from "next/image";
 const social = [
   {
     id: 0,
-    name: "Telegram",
-    link: "https://t.me/smakosh",
-    icon: "/assets/img/telegram.svg",
+    name: "Twitter",
+    link: "https://twitter.com/valbcx",
+    icon: "/assets/img/twitter.svg",
   },
   {
     id: 1,
-    name: "Github",
-    link: "https://github.com/smakosh",
-    icon: "/assets/img/github.svg",
+    name: "Mail",
+    link: "mailto:v.berceaux@icloud.com?subject=🤘 Hi Val, I'd like to hire you",
+    icon: "/assets/img/mail.svg",
   },
   {
     id: 2,
-    name: "StackOverflow",
-    link: "https://stackoverflow.com/users/story/7396786",
-    icon: "/assets/img/stackoverflow.svg",
+    name: "Github",
+    link: "https://github.com/Tambouil",
+    icon: "/assets/img/github.svg",
   },
   {
     id: 3,
-    name: "Twitter",
-    link: "https://twitter.com/smakosh",
-    icon: "/assets/img/twitter.svg",
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/valentin-berceaux-240b5614b/",
+    icon: "/assets/img/linkedin.svg",
+  },
+  {
+    id: 4,
+    name: "Malt",
+    link: "https://www.malt.fr/profile/valentinberceaux",
+    icon: "/assets/img/malt.svg",
   },
 ];
 
@@ -32,23 +38,11 @@ const Footer = () => {
     <div className="pt-56 pb-16 bg-[url('/assets/img/footer.svg')] bg-cover bg-top bg-no-repeat">
       <div className="container mx-auto flex items-center md:items-end text-center md:text-left justify-between flex-col md:flex-row">
         <div className="mb-8 md:mb-0">
-          <h2 className="text-brand-primary font-bold text-2xl mb-4">
-            John Doe
+          <h2 className="text-lightest-navy font-bold text-2xl mb-4">
+            Valentin Berceaux
           </h2>
-          <span className="text-brand-primary">
-            © All rights are reserved | {new Date().getFullYear()} | Made with{" "}
-            <span aria-label="love" role="img">
-              💖
-            </span>{" "}
-            by{" "}
-            <a
-              href="https://smakosh.com/?ref=portfolio-dev"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="text-brand-primary"
-            >
-              Smakosh
-            </a>
+          <span className="text-lightest-navy">
+            © {new Date().getFullYear()} | Build with Next JS & Tailwind CSS
           </span>
         </div>
         <div className="flex items-center">

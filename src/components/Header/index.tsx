@@ -53,7 +53,7 @@ const Header = () => {
           }}
           className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-slate"
         >
-          A Full-Stack Developer.
+          A Full-Stack Developer from France.
           <br />I build things for the web.
         </motion.p>
         <motion.div

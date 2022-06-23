@@ -8,8 +8,10 @@ const Title = () => {
         <span className="text-base text-lightest-navy dark:text-slate">
           I'm a {""}
           <strong className="font-bold">self-taught</strong>
-          {""} developer. I'm currently following a coding bootcamp at
-          OpenClassrooms to enhanced my skills.
+          {""} developer currently following a coding bootcamp at OpenClassrooms
+          to enhanced my skills. Even if I'm specialised in Javascript and
+          TypeScript, I also like to experiment with others technologies and
+          frameworks.
         </span>
       </div>
     </div>
