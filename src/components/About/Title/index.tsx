@@ -6,11 +6,11 @@ const Title = () => {
           About me
         </h2>
         <span className="text-base text-lightest-navy dark:text-slate">
-          I'm a {""}
+          I&apos;rem a {""}
           <strong className="font-bold">self-taught</strong>
           {""} developer currently following a coding bootcamp at OpenClassrooms
-          to enhanced my skills. Even if I'm specialised in Javascript and
-          TypeScript, I also like to experiment with others technologies and
+          to enhanced my skills. Even if I&apos;rem specialised in Javascript
+          and TypeScript, I also like to experiment with others technologies and
           frameworks.
         </span>
       </div>

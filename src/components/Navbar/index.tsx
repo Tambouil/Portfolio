@@ -1,6 +1,7 @@
 import { FiSun, FiMoon } from "react-icons/fi";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
@@ -12,12 +13,14 @@ const Navbar = () => {
   return (
     <header className="w-full sticky top-0 z-30 px-4 shadow-lg bg-gray-100 sm:px-8 dark:bg-nav-navy dark:shadow-nav-navy text-lightest-navy dark:text-primary-light">
       <div className="container flex flex-col items-center justify-between py-3 mx-auto md:flex-row">
-        <a
+        <Link
           href="/"
-          className="px-2 py-1 -mx-2 font-medium leading-tight rounded-md focus:bg-white focus:outline-none"
+          passHref={true}
+          className="px-2 py-1 -mx-2 font-medium leading-tight rounded-md
+          focus:bg-white focus:outline-none"
         >
-          <span className="font-bold text-ternary-light">VB.</span>
-        </a>
+          <a className="font-bold text-ternary-light">VB.</a>
+        </Link>
         <nav className="flex flex-wrap items-center justify-center -mr-2 text-xs sm:text-sm sm:space-x-4 md:text-base">
           <a
             href="#home"
