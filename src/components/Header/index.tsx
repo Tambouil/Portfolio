@@ -41,7 +41,7 @@ const Header = () => {
           }}
           className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-lightest-navy dark:text-lightest-slate"
         >
-          I&apos;rem Valentin Berceaux
+          I&apos;m Valentin Berceaux
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
