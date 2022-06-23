@@ -1,5 +1,5 @@
-import Tabs from "./Tabs/Tabs";
-import Title from "./Title/Title";
+import Tabs from "./Tabs";
+import Title from "./Title";
 
 const Skills = () => {
   return (

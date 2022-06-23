@@ -1,5 +1,5 @@
-import Grid from "./Grid/Grid";
-import Title from "./Title/Title";
+import Grid from "./Grid";
+import Title from "./Title";
 
 export const Projects = () => {
   return (

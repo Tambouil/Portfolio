@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
 import { Meta } from "@/layouts/Meta";
-import Navbar from "../components/Navbar/Navbar";
-import Header from "@/components/Header/Header";
-import { Projects } from "@/components/Projects/Projects";
-import Skills from "@/components/Skills/Skills";
-import Contact from "@/components/Contact/Contact";
+import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
+import { Projects } from "@/components/Projects";
+import Skills from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -13,19 +14,14 @@ const Home: NextPage = () => {
         title="Valentin Berceaux | Full Stack Developer"
         description="Bonjour 👋, I'm Valentin Berceaux, a fullstack web developer with Back-End affinity from West of France."
       />
-      <Navbar
-        logo={"VB"}
-        home={"Home"}
-        projects={"Projects"}
-        skills={"Skills"}
-        contact={"Contact"}
-      />
+      <Navbar />
       <main className="container mx-auto space-y-6 ">
         <Header />
-        {/* <Projects />
+        <Projects />
         <Skills />
-        <Contact /> */}
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 };
