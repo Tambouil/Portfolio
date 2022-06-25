@@ -9,7 +9,11 @@ class MyDocument extends Document {
       <Html lang={AppConfig.locale}>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
             rel="stylesheet"
           />
         </Head>

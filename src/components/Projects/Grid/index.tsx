@@ -5,27 +5,30 @@ const Grid = () => {
     <>
       <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         <Card
-          title={"hello"}
-          stack={"hello"}
-          description={"hello from the other side"}
-          build={"hello"}
-          github={"string"}
-          website={"string"}
+          title={"Portfolio"}
+          stack={"React"}
+          description={"Personnal portfolio website"}
+          build={"Build with Next.js & TailwindCSS"}
+          github={"https://github.com/Tambouil/Portfolio"}
+          website={"https://valentin-berceaux.vercel.app/"}
         />
         <Card
-          title={"Bonjour"}
-          stack={"Bonjour"}
-          description={"Bonjour from the other side"}
-          build={"Bonjour"}
+          title={"REST API"}
+          stack={"Node.js"}
+          description={
+            "REST API with auth, CRUD operations and files management"
+          }
+          build={"Build with Express.js, MongoDB, JWT, YUP validator, Multer"}
+          github={"https://github.com/Tambouil/Piiquante"}
         />
         <Card
-          title={"TEst"}
-          stack={"TEst"}
-          description={"TEst from the other side"}
-          build={"TEst"}
+          title={"SD Architectes"}
+          stack={"React"}
+          description={"Showcase website for an architecture agency"}
+          build={"Build with Next.js, vanilla CSS and Contentful headless CMS"}
+          website={"https://www.sdarchitectes.com/"}
         />
       </ul>
-
       <div className="flex justify-center items-center">
         <a
           target="blank"

@@ -37,13 +37,8 @@ const Footer = () => {
   return (
     <div className="pt-56 pb-16 bg-[url('/assets/img/footer.svg')] bg-cover bg-top bg-no-repeat">
       <div className="container mx-auto flex items-center md:items-end text-center md:text-left justify-between flex-col md:flex-row">
-        <div className="mb-8 md:mb-0">
-          <h2 className="text-lightest-navy font-bold text-2xl mb-4">
-            Valentin Berceaux
-          </h2>
-          <span className="text-lightest-navy">
-            © {new Date().getFullYear()} | Build with Next JS & Tailwind CSS
-          </span>
+        <div className="mb-8 md:mb-0 text-light-navy">
+          © {new Date().getFullYear()} | Valentin Berceaux
         </div>
         <div className="flex items-center">
           {social.map(({ id, name, link, icon }) => (

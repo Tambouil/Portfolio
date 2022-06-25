@@ -17,13 +17,13 @@ const Tabs = () => {
     Stack: [
       {
         id: 1,
-        title: "Font-end",
-        description: "React, Next.js, SCSS with BEM methodology, Tailwind",
+        title: "Back-end",
+        description: "Node.js, Express, MongoDB, Mongoose, PostgreSQL, Prisma",
       },
       {
         id: 2,
-        title: "Back-end",
-        description: "Node.js, Express, MongoDB, Mongoose, PostgreSQL, Prisma",
+        title: "Font-end",
+        description: "React, Next.js, SCSS with BEM methodology, Tailwind",
       },
       {
         id: 3,
@@ -40,32 +40,32 @@ const Tabs = () => {
       },
       {
         id: 2,
-        title: "Groupomania",
+        title: "Project 6: Groupomania",
         description: "Full stack TypeScript Web app",
       },
       {
         id: 3,
-        title: "Piquante",
+        title: "Project 5: Piquante",
         description: "TypeScript REST API with CRUD operations",
       },
       {
         id: 4,
-        title: "Kanap",
+        title: "Project 4: Kanap",
         description: "Front-End e-commerce app with vanilla JS",
       },
       {
         id: 5,
-        title: "La panthère",
+        title: "Project 3: La panthère",
         description: "SEO and Accessibility best practices project",
       },
       {
         id: 6,
-        title: "Ohmyfood",
+        title: "Project 2: Ohmyfood",
         description: "Web integration with full CSS animations",
       },
       {
         id: 7,
-        title: "Booki",
+        title: "Project 1: Booki",
         description: "HTML / CSS web integration",
       },
     ],
@@ -77,7 +77,7 @@ const Tabs = () => {
       {
         id: 2,
         title:
-          "I'm currently learning the concepts of Software Craftsmanship with the book “Software Craft” by Cyrille Martraire",
+          "I'm currently learning the concepts of Software Craftsmanship. I began this journey with the book “Software Craft” by Cyrille Martraire",
         description:
           "DDD, TDD, Clean Code & refactoring, Continuous Integration etc.",
       },
@@ -86,9 +86,9 @@ const Tabs = () => {
 
   return (
     <div className="grid place-items-center">
-      <div className="w-full max-w-xl px-2  sm:px-0">
+      <div className="w-full max-w-xxl px-0 lg:px-12 pb-8">
         <Tab.Group>
-          <Tab.List className="flex space-x-1 rounded-xl p-1 bg-lightest-slate dark:bg-lightest-navy ">
+          <Tab.List className="flex space-x-1 rounded-xl p-1 bg-slate/[0.12] dark:bg-lightest-navy ">
             {Object.keys(categories).map((category) => (
               <Tab
                 key={category}
@@ -120,8 +120,8 @@ const Tabs = () => {
               <Tab.Panel
                 key={idx}
                 className={classNames(
-                  "rounded-xl bg-lightest-slate dark:bg-lightest-navy p-3",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                  "rounded-xl bg-slate/[0.12] dark:bg-lightest-navy p-3",
+                  "ring-white focus:outline-none"
                 )}
               >
                 <ul>
@@ -140,14 +140,6 @@ const Tabs = () => {
                       <p className="mt-1 flex space-x-1 text-xs font-normal leading-4 dark:text-lightest-slate">
                         {post.description}
                       </p>
-
-                      <a
-                        href="#"
-                        className={classNames(
-                          "absolute inset-0 rounded-md",
-                          "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
-                        )}
-                      />
                     </li>
                   ))}
                 </ul>
