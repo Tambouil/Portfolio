@@ -13,6 +13,10 @@ module.exports = {
       xl: "1200px",
       xxl: "1440px",
     },
+    fontFamily: {
+      body: ['"Heebo"', "sans-serif"],
+      mono: ["Roboto Mono", "monospace"],
+    },
     extend: {
       colors: {
         // Light colors
@@ -30,6 +34,7 @@ module.exports = {
         "lightest-slate": "#ccd6f6",
         white: "#e6f1ff",
         green: "#102D44",
+        test: "#e05e5e",
         // Extended v3 color
         gray: colors.neutral,
       },
