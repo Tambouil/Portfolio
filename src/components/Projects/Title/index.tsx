@@ -8,8 +8,9 @@ const Title = () => {
         <span className="font-mono text-base text-lightest-navy dark:text-slate">
           These are {""}
           <strong className="font-semibold">my favourite projects.</strong>
-          {""} They come from clients inquiries, my coding bootcamp or side
-          projects.
+          {""} They come from clients inquiries, coding bootcamp or side
+          projects. Of course, source code might not be available for clients
+          inquiries.
         </span>
       </div>
     </div>
