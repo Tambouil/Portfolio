@@ -15,6 +15,21 @@ const Meta = ({ title, keywords, description }: MetaProps) => {
       <meta charSet="utf-8" />
       <link rel="icon" href="/favicon.ico" />
       <title>{title}</title>
+      <meta name="robots" content="index,follow" />
+      <meta property="og:site_name" content="Portfolio" />
+      <meta
+        property="og:title"
+        content="Valentin Berceaux | Full Stack Developer"
+      />
+      <meta
+        name="description"
+        content="Bonjour 👋, I'm Valentin Berceaux, a fullstack web developer with Back-End affinity from West of France."
+      />
+      <meta
+        property="og:image"
+        itemProp="image"
+        content="https://portfolio-tambouil.vercel.app/assets/img/social.jpg"
+      />
     </Head>
   );
 };
@@ -28,54 +43,3 @@ Meta.defaultProps = {
 };
 
 export default Meta;
-
-// import { Head, Html, Main, NextScript } from "next/document";
-// import { NextSeo } from "next-seo";
-// import { AppConfig } from "@/utils/AppConfig";
-
-// type IMetaProps = {
-//   title: string;
-//   description: string;
-//   site_name: string;
-//   locale: string;
-//   canonical?: string;
-// };
-
-// export default function Document(props: IMetaProps) {
-//   return (
-//     <Html lang={AppConfig.locale}>
-//       <Head>
-//         <link rel="icon" href={`/favicon.ico`} key="favicon" />
-//         <meta
-//           property="og:image"
-//           content="https://portfolio-tambouil.vercel.app/assets/img/developer-dark.svg"
-//           key="ogimage"
-//         />
-//         <link
-//           href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
-//           rel="stylesheet"
-//         />
-//         <link
-//           href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-//           rel="stylesheet"
-//         />
-//         <NextSeo
-//           title={props.title}
-//           description={props.description}
-//           canonical={props.canonical}
-//           openGraph={{
-//             title: props.title,
-//             description: props.description,
-//             url: props.canonical,
-//             locale: AppConfig.locale,
-//             site_name: AppConfig.site_name,
-//           }}
-//         />
-//       </Head>
-//       <body>
-//         <Main />
-//         <NextScript />
-//       </body>
-//     </Html>
-//   );
-// }

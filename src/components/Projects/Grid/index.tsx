@@ -42,6 +42,7 @@ const projects = [
     description: "Movies App using TMDB Api",
     build: "Build with React, SCSS & TMDB Api",
     github: "https://github.com/Tambouil/Movie-App",
+    website: "https://tambouil-movies-app.netlify.app/",
   },
   {
     id: 5,
