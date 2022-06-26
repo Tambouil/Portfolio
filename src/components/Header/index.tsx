@@ -5,7 +5,19 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const [mounted, setMounted] = useState(false);
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
+  let src;
+  switch (resolvedTheme) {
+    case "light":
+      src = "/assets/img/developer.svg";
+      break;
+    case "dark":
+      src = "/assets/img/developer-dark.svg";
+      break;
+    default:
+      src = "/assets/img/developer.svg";
+      break;
+  }
 
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
@@ -76,11 +88,7 @@ const Header = () => {
           layout="responsive"
           width={100}
           height={100}
-          src={
-            theme === "light"
-              ? "/assets/img/developer.svg"
-              : "/assets/img/developer-dark.svg"
-          }
+          src={src}
           alt="Developer"
           priority={true}
         />
