@@ -8,6 +8,7 @@ interface MetaProps {
 
 const Meta = ({ title, keywords, description }: MetaProps) => {
   return (
+
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="keywords" content={keywords} />
@@ -24,6 +25,9 @@ const Meta = ({ title, keywords, description }: MetaProps) => {
       <meta
         name="description"
         content="Bonjour 👋, I'm Valentin Berceaux, a fullstack web developer with Back-End affinity from West of France."
+
+
+
       />
       <meta
         property="og:image"
