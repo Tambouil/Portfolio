@@ -10,7 +10,7 @@ const social = [
   {
     id: 1,
     name: "Mail",
-    link: "mailto:v.berceaux@icloud.com?subject=🤘 Hi Val, I'd like to hire you",
+    link: "mailto:hello@valentinberceaux.com?subject=🤘 Hi Val, I'd like to hire you",
     icon: "/assets/img/mail.svg",
   },
   {
