@@ -15,7 +15,7 @@ const projects = [
     title: "REST API",
     stack: "Node.js",
     description: "REST API with auth, CRUD operations and files management",
-    build: "Build with Express.js, MongoDB, JWT, YUP validator & Multern",
+    build: "Build with Express.js, MongoDB, JWT, YUP validator & Multer",
     github: "https://github.com/Tambouil/Piiquante",
   },
   {
