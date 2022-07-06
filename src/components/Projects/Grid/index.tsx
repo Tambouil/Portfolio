@@ -31,7 +31,7 @@ const projects = [
     title: "Boîte à plans",
     stack: "PHP",
     description:
-      "Files transfert and clients management Web App for SD Architectes agency",
+      "Files transfer and clients management Web App for SD Architectes agency",
     build: "Build with PHP & Bootstrap",
     website: "https://bap.sdarchitectes.com/",
   },
