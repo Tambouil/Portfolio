@@ -61,11 +61,23 @@ const Header = () => {
           transition={{
             ease: "easeInOut",
             duration: 0.9,
-            delay: 0.2,
+            delay: 0.3,
           }}
           className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-slate"
         >
-          A Full-Stack web developer from France.
+          A developer from France.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.9,
+            delay: 0.5,
+          }}
+          className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-slate"
+        >
+          I build things for the web.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
