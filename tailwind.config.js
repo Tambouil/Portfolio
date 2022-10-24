@@ -1,51 +1,34 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require("tailwindcss/colors");
-
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
-    screens: {
-      xs: { max: "480px" },
-      sm: "480px",
-      md: "547px",
-      lg: "768px",
-      xl: "1200px",
-      xxl: "1440px",
-    },
-    fontFamily: {
-      body: ['"Heebo"', "sans-serif"],
-      mono: ["Roboto Mono", "monospace"],
-    },
     extend: {
       colors: {
-        // Light colors
-        "primary-light": "#FFFEFF",
-        "secondary-light": "#272343",
-        "ternary-light": "#e05e5e",
-        // Dark colors
-        "nav-navy": "#09192f",
-        navy: "#0a192f",
-        "light-navy": "#112240",
-        "lightest-navy": "#233554",
-        "lightest-navy-disabled": "#384965",
-        slate: "#8892b0",
-        "light-slate": "#a8b2d1",
-        "lightest-slate": "#ccd6f6",
-        white: "#e6f1ff",
-        green: "#102D44",
-        test: "#e05e5e",
-        // Extended v3 color
-        gray: colors.neutral,
+        dark: {
+          50: "#EDEDED",
+          100: "#dadada",
+          200: "#b5b5b5",
+          300: "#8f8f8f",
+          400: "#6a6a6a",
+          500: "#454545",
+          600: "#373737",
+          700: "#292929",
+          800: "#1c1c1c",
+          850: "#171717",
+          900: "#0e0e0e",
+        },
       },
       container: {
-        padding: {
-          DEFAULT: "1rem",
-          sm: "2rem",
-          lg: "5rem",
-          xl: "6rem",
-          "2xl": "8rem",
-        },
+        center: true,
+        padding: "1rem",
+      },
+      backgroundImage: {
+        "dark-hero": "url('/assets/dark-hero.png')",
+        "light-hero": "url('/assets/light-hero.png')",
+      },
+      screens: {
+        "2xl": "1440px",
       },
     },
   },
