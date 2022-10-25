@@ -16,7 +16,7 @@ import { SectionHeader } from './HeaderSection';
 import MotionLinkButton from './LinkButton';
 import { SectionShell } from './ShellSection';
 
-export const About = () => {
+const About = () => {
   return (
     <SectionShell id="about">
       <SectionHeader heading="About" />
@@ -163,3 +163,5 @@ export const About = () => {
     </SectionShell>
   );
 };
+
+export default About;
