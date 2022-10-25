@@ -3,6 +3,7 @@ import Meta from '@/layouts/Meta';
 import Navbar from '@/components/Navbar/Navbar';
 import Hero from '@/components/Hero';
 import MobileNavbar from '@/components/Navbar/MobileNavbar';
+import Projects from '@/components/Projects';
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <Navbar />
       <MobileNavbar />
       <Hero />
+      <Projects />
     </>
   );
 };
