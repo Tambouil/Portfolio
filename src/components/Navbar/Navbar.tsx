@@ -17,7 +17,11 @@ const Navbar = () => {
       animate="visible"
       className="container fixed inset-x-0 top-0 z-50 hidden h-32 w-full items-center justify-between md:flex"
     >
-      <motion.a className="nav-link" href="/" variants={linkVariants}>
+      <motion.a
+        className="font-medium  text-dark-400 hover:text-dark-500 dark:text-dark-300 dark:hover:text-dark-200"
+        href="/"
+        variants={linkVariants}
+      >
         VB.
       </motion.a>
 
