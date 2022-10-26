@@ -16,19 +16,35 @@ const Contact = () => (
       whileInView="visible"
       exit="hidden"
       viewport={{ once: true }}
-      className="mt-16 flex flex-1 flex-col gap-x-16 gap-y-24 md:ml-24 md:flex-row"
+      className="mt-16 gap-x-16 gap-y-24 md:ml-24 "
     >
       <motion.p
         variants={{
           hidden: { opacity: 0, y: 50 },
           visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
         }}
-        className="col-span-full text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8"
+        className="mt-8 md:mt-16 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200"
       >
         Are you looking for a developer who enjoys taking on new challenges, working in a rapidly changing environment,
         learning new skills, and applying it all to solve large and impactful business problems?
-        <br />I await the opportunity to build modern applications with your team and for your users.
-        <br />
+      </motion.p>
+
+      <motion.p
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
+        }}
+        className="mt-8 md:mt-16 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200"
+      >
+        I await the opportunity to build modern applications with your team and for your users.
+      </motion.p>
+      <motion.p
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
+        }}
+        className="mt-8 md:mt-16 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200"
+      >
         Get in touch with me{' '}
         <a
           href="mailto:hello@valentinberceaux.com"
