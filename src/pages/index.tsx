@@ -6,6 +6,7 @@ import MobileNavbar from '@/components/Navbar/MobileNavbar';
 import Projects from '@/components/Projects';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
+import Footer from '@/components/Folder/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Projects />
       <About />
       <Contact />
+      <Footer />
     </>
   );
 };
