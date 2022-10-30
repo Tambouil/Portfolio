@@ -11,7 +11,7 @@ import Footer from '@/components/Folder/Footer';
 const Home: NextPage = () => {
   return (
     <>
-      <Meta title="Valentin Berceaux | Full Stack Developer" />
+      <Meta />
       <Navbar />
       <MobileNavbar />
       <Hero />

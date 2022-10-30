@@ -22,11 +22,7 @@ const Meta = ({ title, keywords, description }: MetaProps) => {
         name="description"
         content="Bonjour 👋, I'm Valentin Berceaux, a fullstack web developer with Back-End affinity from West of France."
       />
-      <meta
-        property="og:image"
-        itemProp="image"
-        content="https://portfolio-tambouil.vercel.app/assets/img/social.jpg"
-      />
+      <meta property="og:image" itemProp="image" content="/assets/og-image.svg" />
     </Head>
   );
 };
